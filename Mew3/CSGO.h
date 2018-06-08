@@ -4,11 +4,12 @@
 #include <memory>
 #include <vector>
 #include "Memory.h"
-#include "LocalPlayer.h"
 #include "math.h"
 
 #define FL_ONGROUND (1 << 0)
 #define FL_PARTIALGROUND (1 << 18)
+
+
 
 class CSGO
 {
@@ -19,7 +20,6 @@ public:
 
 	//config values:
 	bool		triggerbot;
-	bool		legittrigger;
 	bool		bunnyhop;
 	bool		aimbot;
 	bool		rcs;
@@ -140,6 +140,7 @@ public:
 								"Master Guardian I", "Master Guardian II", "Master Guardian Elite", "Distinguished Master Guardian",
 								"Legendary Eagle", "Legendary Eagle Master", "Supreme Master First Class", "The Global Elite" };
 
-	LocalPlayer	myPlayer;
+
+
 };
 

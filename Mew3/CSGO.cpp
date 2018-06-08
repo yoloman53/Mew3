@@ -44,7 +44,6 @@ bool CSGO::readConfig()
 
 	//features
 	CSGO::triggerbot = GetPrivateProfileInt("features", "triggerbot", 0, fullPath);
-	CSGO::legittrigger = GetPrivateProfileInt("features", "legittrigger", 0, fullPath);
 	CSGO::bunnyhop = GetPrivateProfileInt("features", "bunnyhop", 0, fullPath);
 	CSGO::aimbot = GetPrivateProfileInt("features", "aimbot", 0, fullPath);;
 	CSGO::rcs = GetPrivateProfileInt("features", "antirecoil", 0, fullPath);
@@ -344,13 +343,6 @@ int CSGO::shotsFired()
 	return CSGOMemory.read<int>(returnLocalPlayer() + m_iShotsFired);
 }
 
-//unused
-Entity CSGO::getPlayer(int i)
-{
-	Entity player = Entity(CSGOMemory.read<uintptr_t>(ClientDLL + dwEntityList + (i * 0x10)));
-	player.playerIndex = i;
-	return player.player;
-}
 
 //unused -> mfFlags is a bitmasked value
 int CSGO::getFlags()

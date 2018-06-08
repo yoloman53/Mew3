@@ -3,7 +3,6 @@
 #include <D3dx9math.h>
 #include <d3dx9.h>
 #include <random>
-#include "CSGO.h"
 #include <math.h>
 
 #define M_PI		3.1415926535897f
@@ -127,8 +126,7 @@ namespace Math
 			{
 				AimAngle.y += 180.0f;
 			}
-
-			return AimAngle;
+			return ClampAngle(AimAngle);
 		}
 
 		static D3DXVECTOR3 dVelocityComp(D3DXVECTOR3 EnemyPos, D3DXVECTOR3 EnemyVecVelocity, D3DXVECTOR3 PlayerVecVelocity, float dist)
