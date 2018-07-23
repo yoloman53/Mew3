@@ -1,5 +1,5 @@
 # Mew3 . a counterstrike cheat
-An customizable external multi cheat for CounterStrike:Global Offensive
+A customizable external multi cheat for CounterStrike:Global Offensive
 
 ## Features
 * Subtle Aimbot 
